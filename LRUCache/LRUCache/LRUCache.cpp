@@ -1,27 +1,24 @@
 #include <iostream>
-
-template <typename S, typename T>
-class LRUCache {
-private:
-    uint32_t _capacity;
-
-public:
-    LRUCache(uint32_t capacity) : _capacity(capacity) {}
-
-    void put(S key, T val)
-    {
-
-    }
-
-    T get(S key)
-    {
-        return {};
-    }
-};
+#include "LRUCache.h"
 
 int main()
 {
     LRUCache<int, int> cache(10);
-    cache.put(1, 1);
+    int x = 1e2;
+    while (x--)
+    {
+        cache.put(x, x);
+    }
+    
+    x = 1e3;
+    while (x--)
+    {
+        int out;
+        if(cache.get(x, out))
+            std::cout << "Got " << out << " from " << x << std::endl;
+        else
+            std::cout << "Failed to get value from " << x << std::endl;
+    }
 
+    return 0;
 }
