@@ -7,6 +7,7 @@
 *   
 *   TODO:
 *   - Check for memory leaks.
+*   - Unit tests.
 * 
 *   Extensions:
 *   - Thread Safety.
@@ -72,7 +73,7 @@ public:
         return true;
     }
 
-    uint32_t size()
+    size_t size()
     {
         return _mp.size();
     }
