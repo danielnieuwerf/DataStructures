@@ -8,6 +8,7 @@ namespace LRUCacheTests
 	{
 		LRUCache<int, int> cache(0);
 	}
+
 	TEST(LRUCache, SizeDoesNotExceedCapacity) {
 		LRUCache<int, int> cache(5);
 		EXPECT_EQ(cache.size(), 0);
@@ -15,6 +16,7 @@ namespace LRUCacheTests
 			cache.put(i, i);
 		EXPECT_EQ(cache.size(), 5);
 	}
+
 	TEST(LRUCache, LeastRecentlyUsedEvictedWhenCapacityReached) {
 		LRUCache<int, int> cache(5);
 		for (int i = 0; i < 10; ++i)
@@ -32,9 +34,11 @@ namespace LRUCacheTests
 			EXPECT_FALSE(cache.get(i, outValue));
 		}
 	}
+
 	TEST(LRUCache, ThrowIfZeroCapacity) {
 		EXPECT_DEATH(zero_capacity(), "");
 	}
+
 
 	TEST(LRUCache, GetUpdatesEvictionOrder) {
 		LRUCache<int, int> cache(10);
