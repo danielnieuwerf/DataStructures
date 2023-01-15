@@ -7,7 +7,6 @@
 *   
 *   TODO:
 *   - Check for memory leaks.
-*   - Unit tests.
 * 
 *   Extensions:
 *   - Thread Safety.

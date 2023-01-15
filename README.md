@@ -6,10 +6,13 @@ There have been times in my developer journey where I needed to implement a non 
 Also implementing data structures from scratch is fun + challenging.
 
 
+### Done:
+
+- LRU Cache
+
 ### TODO:
 
 - Rounded Stack
-- LRU Cache
-- String.
+- String
 - Dynamic Array
 
