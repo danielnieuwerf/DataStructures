@@ -140,9 +140,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LRUCache.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="RoundedStack.h" />
     <ClInclude Include="LRUCache.h" />
   </ItemGroup>
