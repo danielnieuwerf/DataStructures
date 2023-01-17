@@ -143,6 +143,7 @@
     <ClCompile Include="LRUCache.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="RoundedStack.h" />
     <ClInclude Include="LRUCache.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
