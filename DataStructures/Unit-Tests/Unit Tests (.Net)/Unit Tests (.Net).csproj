@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Data Structures (C Sharp)\Data Structures (C Sharp).csproj" />
+    <ProjectReference Include="..\..\Data Structures (C Sharp)\Data Structures .Net.csproj" />
   </ItemGroup>
 
 </Project>
