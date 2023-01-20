@@ -20,6 +20,26 @@ namespace LRUCacheTests
 		}
 	}
 
+	TEST(RoundedStack, BehavesLikeStackIfCapNotExceeded) {
+		RoundedStack<char> stack(30);
+		std::string s = "data_to_push_on_stack";
+		std::string expectedOutput = "kcats_no_hsup_ot_atad";
+		std::string output;
+
+		for (auto& c: s)
+			stack.push(c);
+
+		EXPECT_EQ(stack.size(), s.length());
+
+		while (!stack.empty())
+		{
+			output += stack.top();
+			stack.pop();
+		}
+
+		EXPECT_EQ(output, expectedOutput);
+	}
+
 	TEST(RoundedStack, InitiallyEmpty)
 	{
 		RoundedStack<int> stack(3);

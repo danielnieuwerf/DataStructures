@@ -9,10 +9,10 @@ Also implementing data structures from scratch is fun + challenging.
 ### Done:
 
 - LRU Cache
+- Rounded Stack
 
 ### TODO:
 
-- Rounded Stack
 - String
 - Dynamic Array
 
