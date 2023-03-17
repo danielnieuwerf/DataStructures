@@ -13,6 +13,7 @@ Also implementing data structures from scratch is fun + challenging.
 
 ### TODO:
 
+- Trie
 - String
 - Dynamic Array
 
