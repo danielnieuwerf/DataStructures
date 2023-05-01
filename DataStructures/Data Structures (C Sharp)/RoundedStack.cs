@@ -25,7 +25,9 @@ namespace Data_Structures__C_Sharp_
 
             if (size > capacity)
             {
-                var arr = stack.ToArray();  // TODO O(n) can be improved upon.
+                // TODO O(n) can be improved upon using a doubly linked list but we'd
+                // have to implement this from scracth too as it's not part of .NET
+                var arr = stack.ToArray();
                 stack.Clear();
                 for(int i = arr.Length - 2; i>=0; --i)
                     stack.Push(arr[i]);
